@@ -1,0 +1,1 @@
+ammo_count = 3;

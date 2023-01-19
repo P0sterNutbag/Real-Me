@@ -1,0 +1,23 @@
+active = false;
+t_scene_info = [
+	[cutscene_move_character,obj_player,612,152,false,0.15,spr_player_walk,spr_player_idle],
+	[cutscene_instance_create,592,198,"enemies",obj_mimic],
+	//[cutscene_change_camera_position,592,173],
+	[cutscene_move_character,obj_mimic,592,152,false,0.2,spr_mimic2_walk,spr_mimic2_idle],
+	[cutscene_dialogue,["Oh, Jordan, it's you.","player",
+	"Is everything okay?","player"]],
+	[cutscene_dialogue,["...", "mimic"]],
+	[cutscene_move_character,obj_mimic,4,0,true,0.1,spr_mimic2_walk,spr_mimic2_idle],
+	[cutscene_wait,0.5],
+	[cutscene_dialogue,["Jordan?", "player"]],
+	[cutscene_wait,1],
+	[cutscene_change_sprite,obj_mimic,spr_mimic1_idle,0],
+	//[cutscene_play_sound,snd_chase_music,false,1],
+	[cutscene_wait,0.5],
+	[cutscene_instance_create,328,308,"terrain",obj_double_door_fake],
+	[cutscene_instance_destroy,obj_double_door],
+	[cutscene_change_value,inst_7EFF1ECE,"on",true],
+	[cutscene_change_value,inst_6EDD1988,"on",true],
+	[cutscene_change_value,inst_79135525,"on",true],
+	//[cutscene_move_character,obj_mimic,0,17,true,0.1,270,spr_mimic2_walk,spr_mimic2_idle],
+]         

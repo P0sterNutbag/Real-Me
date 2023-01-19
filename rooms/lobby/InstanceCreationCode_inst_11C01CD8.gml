@@ -1,0 +1,1 @@
+if !obj_progress.play_lobby_cutscene_1  instance_destroy();
